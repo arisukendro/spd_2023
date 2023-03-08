@@ -1,0 +1,369 @@
+CRITICAL - 2023-03-07 06:27:21 --> array_push() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Surattugas.php on line 869.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Surattugas.php', 869, [...])
+ 2 APPPATH/Controllers/Surattugas.php(869): array_push(null, '12')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 10:52:01 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 163.
+ 1 APPPATH/Controllers/Surattugas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 163, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 10:58:16 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 163.
+ 1 APPPATH/Controllers/Surattugas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 163, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:00:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 163.
+ 1 APPPATH/Controllers/Surattugas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 163, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:01:36 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 166.
+ 1 APPPATH/Controllers/Surattugas.php(166): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 166, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:28:30 --> syntax error, unexpected '}', expecting ')'
+in APPPATH/Controllers/Surattugas.php on line 877.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('surattugas/detil/Mg==')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('surattugas/detil/Mg==')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('surattugas/detil/Mg==')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:29:04 --> syntax error, unexpected '=', expecting ')'
+in APPPATH/Controllers/Surattugas.php on line 908.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('surattugas/detil/Mg==')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('surattugas/detil/Mg==')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('surattugas/detil/Mg==')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:30:39 --> Undefined variable: personil_lama
+in APPPATH/Controllers/Surattugas.php on line 866.
+ 1 APPPATH/Controllers/Surattugas.php(866): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: personil_lama', 'APPPATH/Controllers/Surattugas.php', 866, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:31:28 --> Undefined variable: simpan_personil
+in APPPATH/Controllers/Surattugas.php on line 896.
+ 1 APPPATH/Controllers/Surattugas.php(896): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: simpan_personil', 'APPPATH/Controllers/Surattugas.php', 896, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:32:10 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 11:33:40 --> Undefined index: st_personil_id
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: st_personil_id', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:01:11 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:02:42 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:04:22 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:04:59 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:06:48 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:06:59 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:07:16 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:07:50 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:18:44 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:19:53 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:21:02 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 910.
+ 1 APPPATH/Controllers/Surattugas.php(910): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 910, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:25:07 --> Array to string conversion
+in APPPATH/Controllers/Surattugas.php on line 878.
+ 1 APPPATH/Controllers/Surattugas.php(878): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Controllers/Surattugas.php', 878, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:29:27 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:33:09 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 909.
+ 1 APPPATH/Controllers/Surattugas.php(909): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 909, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:36:14 --> Undefined index: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 1017.
+ 1 APPPATH/Controllers/Surattugas.php(1017): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 1017, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('8')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:36:53 --> Undefined variable: r_person
+in APPPATH/Controllers/Surattugas.php on line 1017.
+ 1 APPPATH/Controllers/Surattugas.php(1017): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: r_person', 'APPPATH/Controllers/Surattugas.php', 1017, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('8')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 14:37:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`spd_2023`.`surat_tugas_personil`, CONSTRAINT `surat_tugas_personil_ibfk_1` FOREIGN KEY (`surat_tugas_id`) REFERENCES `surat_tugas` (`id_st`)) in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `su...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `su...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `su...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `su...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Surattugas.php(1020): CodeIgniter\BaseModel->delete(Array)
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('8')
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-07 14:37:11 --> Cannot delete or update a parent row: a foreign key constraint fails (`spd_2023`.`surat_tugas_personil`, CONSTRAINT `surat_tugas_personil_ibfk_1` FOREIGN KEY (`surat_tugas_id`) REFERENCES `surat_tugas` (`id_st`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'8\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'8\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `surat_tugas`
+WHERE `id_st` IN :id_st:', [...], false)
+ 5 SYSTEMPATH/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Surattugas.php(1020): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('8')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-07 14:37:55 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`spd_2023`.`surat_tugas_personil`, CONSTRAINT `surat_tugas_personil_ibfk_1` FOREIGN KEY (`surat_tugas_id`) REFERENCES `surat_tugas` (`id_st`)) in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `su...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `su...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `su...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `su...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Surattugas.php(1020): CodeIgniter\BaseModel->delete(Array)
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('9')
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-07 14:37:55 --> Cannot delete or update a parent row: a foreign key constraint fails (`spd_2023`.`surat_tugas_personil`, CONSTRAINT `surat_tugas_personil_ibfk_1` FOREIGN KEY (`surat_tugas_id`) REFERENCES `surat_tugas` (`id_st`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'9\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'9\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `surat_tugas`
+WHERE `id_st` IN (\'9\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `surat_tugas`
+WHERE `id_st` IN :id_st:', [...], false)
+ 5 SYSTEMPATH/Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH/BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH/Controllers/Surattugas.php(1020): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->hapusdata('9')
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:45:44 --> Undefined index: id_spd
+in APPPATH/Controllers/Surattugas.php on line 914.
+ 1 APPPATH/Controllers/Surattugas.php(914): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_spd', 'APPPATH/Controllers/Surattugas.php', 914, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:47:34 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 914.
+ 1 APPPATH/Controllers/Surattugas.php(914): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 914, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:48:47 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 604.
+ 1 APPPATH/Controllers/Surattugas.php(604): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 604, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:50:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 913.
+ 1 APPPATH/Controllers/Surattugas.php(913): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 913, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:54:23 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 913.
+ 1 APPPATH/Controllers/Surattugas.php(913): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 913, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:55:37 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 913.
+ 1 APPPATH/Controllers/Surattugas.php(913): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 913, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 14:57:07 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Surattugas.php on line 912.
+ 1 APPPATH/Controllers/Surattugas.php(912): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Surattugas.php', 912, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanupdate()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:56:23 --> Undefined variable: jenis_st
+in APPPATH/Views/spd/cetak_lk.php on line 6.
+ 1 APPPATH/Views/spd/cetak_lk.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jenis_st', 'APPPATH/Views/spd/cetak_lk.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/cetak_lk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/cetak_lk', [], true)
+ 5 APPPATH/Controllers/Spd.php(419): view('spd/cetak_lk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->cetak('MjA=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:58:07 --> Undefined variable: kode_pejabat
+in APPPATH/Controllers/Surattugas.php on line 303.
+ 1 APPPATH/Controllers/Surattugas.php(303): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_pejabat', 'APPPATH/Controllers/Surattugas.php', 303, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataTambah()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 17:58:10 --> Undefined variable: kode_pejabat
+in APPPATH/Controllers/Surattugas.php on line 303.
+ 1 APPPATH/Controllers/Surattugas.php(303): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_pejabat', 'APPPATH/Controllers/Surattugas.php', 303, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataTambah()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 18:56:26 --> Undefined variable: agenda_skg
+in APPPATH/Controllers/Surattugas.php on line 279.
+ 1 APPPATH/Controllers/Surattugas.php(279): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: agenda_skg', 'APPPATH/Controllers/Surattugas.php', 279, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataTambah()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 18:57:00 --> Undefined variable: agenda_skg
+in APPPATH/Controllers/Surattugas.php on line 279.
+ 1 APPPATH/Controllers/Surattugas.php(279): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: agenda_skg', 'APPPATH/Controllers/Surattugas.php', 279, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataTambah()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 19:09:03 --> Undefined variable: kode_pejabat
+in APPPATH/Controllers/Surattugas.php on line 326.
+ 1 APPPATH/Controllers/Surattugas.php(326): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_pejabat', 'APPPATH/Controllers/Surattugas.php', 326, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->nomor_st()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 21:21:18 --> Undefined variable: jenis_st
+in APPPATH/Views/spd/cetak_lk.php on line 6.
+ 1 APPPATH/Views/spd/cetak_lk.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jenis_st', 'APPPATH/Views/spd/cetak_lk.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/cetak_lk.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/cetak_lk', [], true)
+ 5 APPPATH/Controllers/Spd.php(419): view('spd/cetak_lk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->cetak('MjU=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-07 21:21:39 --> Invalid file: spd/listData.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('spd/listData.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/listData', [], true)
+ 3 APPPATH/Controllers/Spd.php(32): view('spd/listData', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

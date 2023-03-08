@@ -1,0 +1,207 @@
+CRITICAL - 2023-03-02 08:10:16 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in /home/bersama/Www/spd_2023/system/Model.php on line 772
+in SYSTEMPATH/Database/BaseBuilder.php on line 954.
+ 1 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->like('surat_tugas_id', null)
+ 2 APPPATH/Controllers/Surattugas.php(527): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataEdit()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 08:37:20 --> Argument 2 passed to CodeIgniter\Database\BaseBuilder::like() must be of the type string, null given, called in /home/bersama/Www/spd_2023/system/Model.php on line 772
+in SYSTEMPATH/Database/BaseBuilder.php on line 954.
+ 1 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->like('surat_tugas_id', null)
+ 2 APPPATH/Controllers/Surattugas.php(527): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataEdit()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 10:49:28 --> Array to string conversion
+in APPPATH/Views/surattugas/form_edit.php on line 22.
+ 1 APPPATH/Views/surattugas/form_edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Views/surattugas/form_edit.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/form_edit', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(545): view('surattugas/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->ubah('NTU=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 10:49:37 --> Array to string conversion
+in APPPATH/Views/surattugas/form_edit.php on line 22.
+ 1 APPPATH/Views/surattugas/form_edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Views/surattugas/form_edit.php', 22, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/form_edit', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(545): view('surattugas/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->ubah('NTU=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:20:04 --> Undefined variable: st_personil
+in APPPATH/Views/surattugas/detil.php on line 31.
+ 1 APPPATH/Views/surattugas/detil.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: st_personil', 'APPPATH/Views/surattugas/detil.php', 31, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/detil.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/detil', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(129): view('surattugas/detil', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->detil('NTU=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:34:19 --> Undefined variable: nomor_st
+in APPPATH/Views/surattugas/detil.php on line 52.
+ 1 APPPATH/Views/surattugas/detil.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nomor_st', 'APPPATH/Views/surattugas/detil.php', 52, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/detil.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/detil', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(129): view('surattugas/detil', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->detil('NTU=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:34:34 --> Undefined variable: id
+in APPPATH/Controllers/Surattugas.php on line 135.
+ 1 APPPATH/Controllers/Surattugas.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Surattugas.php', 135, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:34:58 --> Undefined variable: id
+in APPPATH/Controllers/Surattugas.php on line 135.
+ 1 APPPATH/Controllers/Surattugas.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Surattugas.php', 135, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:38:02 --> Undefined variable: id
+in APPPATH/Controllers/Surattugas.php on line 135.
+ 1 APPPATH/Controllers/Surattugas.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Surattugas.php', 135, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:39:20 --> Undefined variable: id
+in APPPATH/Controllers/Surattugas.php on line 135.
+ 1 APPPATH/Controllers/Surattugas.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Surattugas.php', 135, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:40:48 --> Undefined variable: id
+in APPPATH/Controllers/Surattugas.php on line 135.
+ 1 APPPATH/Controllers/Surattugas.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Surattugas.php', 135, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:02:34 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:02:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:03:19 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:03:25 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:03:59 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:04:03 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:05:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:05:59 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:06:40 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:07:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:31:15 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:31:45 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:32:10 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 137.
+ 1 APPPATH/Controllers/Surattugas.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:34:25 --> Call to undefined method App\Controllers\Surattugas::getVar()
+in APPPATH/Controllers/Surattugas.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 20:42:51 --> syntax error, unexpected '"\" class=\"btn btn-primary\">' (T_CONSTANT_ENCAPSED_STRING)
+in APPPATH/Controllers/Surattugas.php on line 149.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('surattugas/detil/NTY=')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('surattugas/detil/NTY=')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('surattugas/detil/NTY=')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 21:40:51 --> Call to undefined method App\Models\SpdModel::dataTerakhir
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Spd.php(129): CodeIgniter\Model->__call('dataTerakhir', [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->tambah('56')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,560 @@
+CRITICAL - 2023-03-04 05:32:02 --> Undefined index: id_personil
+in APPPATH/Controllers/Surattugas.php on line 148.
+ 1 APPPATH/Controllers/Surattugas.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_personil', 'APPPATH/Controllers/Surattugas.php', 148, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:33:08 --> Undefined variable: id
+in APPPATH/Views/surattugas/detil.php on line 23.
+ 1 APPPATH/Views/surattugas/detil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/surattugas/detil.php', 23, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/detil.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/detil', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(130): view('surattugas/detil', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->detil('NTY=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:34:34 --> Undefined variable: id
+in APPPATH/Views/surattugas/detil.php on line 23.
+ 1 APPPATH/Views/surattugas/detil.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/surattugas/detil.php', 23, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/surattugas/detil.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('surattugas/detil', [], true)
+ 5 APPPATH/Controllers/Surattugas.php(130): view('surattugas/detil', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->detil('NTY=')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:34:44 --> Undefined index: id_personil
+in APPPATH/Controllers/Surattugas.php on line 148.
+ 1 APPPATH/Controllers/Surattugas.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_personil', 'APPPATH/Controllers/Surattugas.php', 148, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:37:10 --> Undefined index: nama_peg
+in APPPATH/Controllers/Surattugas.php on line 212.
+ 1 APPPATH/Controllers/Surattugas.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_peg', 'APPPATH/Controllers/Surattugas.php', 212, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:41:40 --> Undefined index: nama_peg
+in APPPATH/Controllers/Surattugas.php on line 212.
+ 1 APPPATH/Controllers/Surattugas.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_peg', 'APPPATH/Controllers/Surattugas.php', 212, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:45:55 --> Undefined index: nama_peg
+in APPPATH/Controllers/Surattugas.php on line 212.
+ 1 APPPATH/Controllers/Surattugas.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_peg', 'APPPATH/Controllers/Surattugas.php', 212, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 05:47:39 --> Undefined index: nama_peg
+in APPPATH/Controllers/Surattugas.php on line 212.
+ 1 APPPATH/Controllers/Surattugas.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_peg', 'APPPATH/Controllers/Surattugas.php', 212, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:05:21 --> Undefined variable: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 209.
+ 1 APPPATH/Controllers/Surattugas.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 209, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:05:31 --> Undefined variable: id_st_personil
+in APPPATH/Controllers/Surattugas.php on line 209.
+ 1 APPPATH/Controllers/Surattugas.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_st_personil', 'APPPATH/Controllers/Surattugas.php', 209, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:08:53 --> Undefined variable: id_st
+in APPPATH/Controllers/Surattugas.php on line 209.
+ 1 APPPATH/Controllers/Surattugas.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_st', 'APPPATH/Controllers/Surattugas.php', 209, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:14:13 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 215.
+ 1 APPPATH/Controllers/Surattugas.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 215, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:16:05 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 215.
+ 1 APPPATH/Controllers/Surattugas.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 215, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 06:25:33 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 215.
+ 1 APPPATH/Controllers/Surattugas.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 215, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 07:18:45 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 215.
+ 1 APPPATH/Controllers/Surattugas.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 215, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 07:19:22 --> Undefined index: kota_ttd
+in APPPATH/Controllers/Surattugas.php on line 215.
+ 1 APPPATH/Controllers/Surattugas.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kota_ttd', 'APPPATH/Controllers/Surattugas.php', 215, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 08:48:48 --> Undefined property: App\Controllers\Surattugas::$config
+in APPPATH/Controllers/Surattugas.php on line 247.
+ 1 APPPATH/Controllers/Surattugas.php(247): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Surattugas::$config', 'APPPATH/Controllers/Surattugas.php', 247, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->nomorSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 09:41:41 --> Undefined index: perihal_st
+in APPPATH/Controllers/Surattugas.php on line 214.
+ 1 APPPATH/Controllers/Surattugas.php(214): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: perihal_st', 'APPPATH/Controllers/Surattugas.php', 214, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->buatSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 10:34:00 --> mysqli_sql_exception: Unknown column 'tanggal_spd' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/app/Models/SpdModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/app/Controllers/Surattugas.php(230): App\Models\SpdModel->dataTerakhir()
+#6 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Surattugas->nomorSpd()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-04 10:34:00 --> Unknown column 'tanggal_spd' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `id_spd` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `id_spd` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `id_spd` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE :tanggal_spd: ESCAPE \'!\'
+ORDER BY `id_spd` DESC
+ LIMIT 1', [...], false)
+ 5 APPPATH/Models/SpdModel.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Surattugas.php(230): App\Models\SpdModel->dataTerakhir()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->nomorSpd()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 11:34:47 --> mysqli_sql_exception: Unknown column 'tanggal_spd' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Spd->listData()
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-04 11:34:47 --> Unknown column 'tanggal_spd' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE :tanggal_spd: ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->listData()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 11:35:01 --> mysqli_sql_exception: Unknown column 'tanggal_spd' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Spd->listData()
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-04 11:35:01 --> Unknown column 'tanggal_spd' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE :tanggal_spd: ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->listData()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 12:06:22 --> Undefined variable: mPenandatangan
+in APPPATH/Controllers/Surattugas.php on line 293.
+ 1 APPPATH/Controllers/Surattugas.php(293): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mPenandatangan', 'APPPATH/Controllers/Surattugas.php', 293, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 12:06:50 --> Undefined index: nama_ppkom
+in APPPATH/Controllers/Surattugas.php on line 306.
+ 1 APPPATH/Controllers/Surattugas.php(306): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_ppkom', 'APPPATH/Controllers/Surattugas.php', 306, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanSpd()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 12:07:30 --> mysqli_sql_exception: Column 'jenis_formulir' cannot be null in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sp...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sp...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sp...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sp...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/bersama/Www/spd_2023/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/bersama/Www/spd_2023/app/Controllers/Surattugas.php(312): CodeIgniter\Model->insert(Array)
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Surattugas->simpanSpd()
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+#10 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-04 12:07:30 --> Column 'jenis_formulir' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `spd` (`nomor_spd`, `st_personil_id`, `kendaraan`, `tingkat_spd`, `sumber_dana`, `jenis_formulir`, `akun_anggaran`, `kota_ttd_spd`, `tanggal_ttd_spd`, `jabatan_ttd_spd`, `nama_ttd_spd`, `nip_ttd_spd`, `created_by`, `created_at`, `updated_at`) VALUES (\'1/RT.02.01-SPD/3301/PPK-Kab/3301/2023\', \'497\', \'Kendaraan\', \'Tingkat C\', \'APBN\', NULL, NULL, NULL, NULL, \'Pejabat Pembuat Komitmen\', \'Hari Sugiharto\', \'66\', 1, \'2023-03-04 12:07:30\', \'2023-03-04 12:07:30\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `spd` (`nomor_spd`, `st_personil_id`, `kendaraan`, `tingkat_spd`, `sumber_dana`, `jenis_formulir`, `akun_anggaran`, `kota_ttd_spd`, `tanggal_ttd_spd`, `jabatan_ttd_spd`, `nama_ttd_spd`, `nip_ttd_spd`, `created_by`, `created_at`, `updated_at`) VALUES (\'1/RT.02.01-SPD/3301/PPK-Kab/3301/2023\', \'497\', \'Kendaraan\', \'Tingkat C\', \'APBN\', NULL, NULL, NULL, NULL, \'Pejabat Pembuat Komitmen\', \'Hari Sugiharto\', \'66\', 1, \'2023-03-04 12:07:30\', \'2023-03-04 12:07:30\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `spd` (`nomor_spd`, `st_personil_id`, `kendaraan`, `tingkat_spd`, `sumber_dana`, `jenis_formulir`, `akun_anggaran`, `kota_ttd_spd`, `tanggal_ttd_spd`, `jabatan_ttd_spd`, `nama_ttd_spd`, `nip_ttd_spd`, `created_by`, `created_at`, `updated_at`) VALUES (\'1/RT.02.01-SPD/3301/PPK-Kab/3301/2023\', \'497\', \'Kendaraan\', \'Tingkat C\', \'APBN\', NULL, NULL, NULL, NULL, \'Pejabat Pembuat Komitmen\', \'Hari Sugiharto\', \'66\', 1, \'2023-03-04 12:07:30\', \'2023-03-04 12:07:30\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `spd` (`nomor_spd`, `st_personil_id`, `kendaraan`, `tingkat_spd`, `sumber_dana`, `jenis_formulir`, `akun_anggaran`, `kota_ttd_spd`, `tanggal_ttd_spd`, `jabatan_ttd_spd`, `nama_ttd_spd`, `nip_ttd_spd`, `created_by`, `created_at`, `updated_at`) VALUES (:nomor_spd:, :st_personil_id:, :kendaraan:, :tingkat_spd:, :sumber_dana:, :jenis_formulir:, :akun_anggaran:, :kota_ttd_spd:, :tanggal_ttd_spd:, :jabatan_ttd_spd:, :nama_ttd_spd:, :nip_ttd_spd:, :created_by:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Surattugas.php(312): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->simpanSpd()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 13:05:11 --> mysqli_sql_exception: Unknown column 'tanggal_spd' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Spd->listData()
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-04 13:05:11 --> Unknown column 'tanggal_spd' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE :tanggal_spd: ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->listData()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 13:28:11 --> mysqli_sql_exception: Unknown column 'surat_tugas_id' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /home/bersama/Www/spd_2023/app/Controllers/Surattugas.php(152): CodeIgniter\BaseModel->first()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-04 13:28:11 --> Unknown column 'surat_tugas_id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `surat_tugas_id` = \'56\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `surat_tugas_id` = \'56\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `surat_tugas_id` = \'56\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `surat_tugas_id` = :surat_tugas_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Surattugas.php(152): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 13:29:14 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Surattugas.php on line 163.
+ 1 APPPATH/Controllers/Surattugas.php(163): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Surattugas.php', 163, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surattugas->dataDetil()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surattugas))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-04 13:47:51 --> mysqli_sql_exception: Unknown column 'tanggal_spd' in 'where clause' in /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/bersama/Www/spd_2023/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/bersama/Www/spd_2023/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/bersama/Www/spd_2023/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/bersama/Www/spd_2023/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/bersama/Www/spd_2023/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/bersama/Www/spd_2023/app/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+#7 /home/bersama/Www/spd_2023/system/CodeIgniter.php(927): App\Controllers\Spd->listData()
+#8 /home/bersama/Www/spd_2023/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+#9 /home/bersama/Www/spd_2023/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/bersama/Www/spd_2023/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-04 13:47:51 --> Unknown column 'tanggal_spd' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE \'%2023%\' ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `spd`
+WHERE `tanggal_spd` LIKE :tanggal_spd: ESCAPE \'!\'
+ORDER BY `tanggal_spd` DESC, `id_spd` DESC', [...], false)
+ 5 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Spd.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->listData()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:28:16 --> Undefined index: nomor_spd
+in APPPATH/Controllers/Spd.php on line 271.
+ 1 APPPATH/Controllers/Spd.php(271): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_spd', 'APPPATH/Controllers/Spd.php', 271, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:29:12 --> Undefined index: nomor_spd
+in APPPATH/Controllers/Spd.php on line 271.
+ 1 APPPATH/Controllers/Spd.php(271): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_spd', 'APPPATH/Controllers/Spd.php', 271, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:29:24 --> Undefined index: nomor_spd
+in APPPATH/Controllers/Spd.php on line 271.
+ 1 APPPATH/Controllers/Spd.php(271): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_spd', 'APPPATH/Controllers/Spd.php', 271, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:30:05 --> Undefined index: nomor_spd
+in APPPATH/Controllers/Spd.php on line 271.
+ 1 APPPATH/Controllers/Spd.php(271): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nomor_spd', 'APPPATH/Controllers/Spd.php', 271, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:31:28 --> Undefined index: akun
+in APPPATH/Controllers/Spd.php on line 272.
+ 1 APPPATH/Controllers/Spd.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: akun', 'APPPATH/Controllers/Spd.php', 272, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:31:59 --> Undefined variable: id_lokasi
+in APPPATH/Views/lokasi/formedit.php on line 5.
+ 1 APPPATH/Views/lokasi/formedit.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_lokasi', 'APPPATH/Views/lokasi/formedit.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/lokasi/formedit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('lokasi/formedit', [], true)
+ 5 APPPATH/Controllers/Spd.php(280): view('lokasi/formedit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:33:11 --> Undefined variable: id
+in APPPATH/Views/spd/form_edit.php on line 7.
+ 1 APPPATH/Views/spd/form_edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/spd/form_edit.php', 7, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(280): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:38:18 --> Undefined variable: id
+in APPPATH/Views/spd/form_edit.php on line 7.
+ 1 APPPATH/Views/spd/form_edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/spd/form_edit.php', 7, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(280): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:43:42 --> Undefined variable: id
+in APPPATH/Controllers/Spd.php on line 266.
+ 1 APPPATH/Controllers/Spd.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Spd.php', 266, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:49:40 --> Undefined variable: id
+in APPPATH/Controllers/Spd.php on line 266.
+ 1 APPPATH/Controllers/Spd.php(266): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Spd.php', 266, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:50:17 --> Undefined variable: riw_st
+in APPPATH/Controllers/Spd.php on line 273.
+ 1 APPPATH/Controllers/Spd.php(273): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: riw_st', 'APPPATH/Controllers/Spd.php', 273, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:50:35 --> Undefined variable: row
+in APPPATH/Controllers/Spd.php on line 275.
+ 1 APPPATH/Controllers/Spd.php(275): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'APPPATH/Controllers/Spd.php', 275, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:51:13 --> Undefined variable: id
+in APPPATH/Views/spd/form_edit.php on line 7.
+ 1 APPPATH/Views/spd/form_edit.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/spd/form_edit.php', 7, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(285): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:51:44 --> Undefined variable: nama
+in APPPATH/Views/spd/form_edit.php on line 9.
+ 1 APPPATH/Views/spd/form_edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nama', 'APPPATH/Views/spd/form_edit.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(285): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:52:25 --> Undefined variable: sumber_dana
+in APPPATH/Views/spd/form_edit.php on line 57.
+ 1 APPPATH/Views/spd/form_edit.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sumber_dana', 'APPPATH/Views/spd/form_edit.php', 57, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(286): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 14:53:24 --> Undefined variable: tgl_ttd
+in APPPATH/Views/spd/form_edit.php on line 125.
+ 1 APPPATH/Views/spd/form_edit.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tgl_ttd', 'APPPATH/Views/spd/form_edit.php', 125, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spd/form_edit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spd/form_edit', [], true)
+ 5 APPPATH/Controllers/Spd.php(287): view('spd/form_edit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Spd->formEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Spd))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
