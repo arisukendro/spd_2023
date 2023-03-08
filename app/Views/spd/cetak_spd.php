@@ -236,10 +236,10 @@
     <div style="page-break-after:always;"></div>
     <table class="table-no-border " style="border:1px solid #000" width="100%">
         <tr>
-            <td colspan="6" rowspan="4" width="30%"></td>
+            <td colspan="6" rowspan="4" width="40%"></td>
             <td width="15pt">I</td>
-            <td colspan="2" width="60pt">Berangkat dari<br />(tempat kedudukan)</td>
-            <td colspan="3" class="tabel-1">: <?=$instansi_singkat.' '.$kabkota_singkat?></td>
+            <td colspan="2" >Berangkat dari<br />(tempat kedudukan)</td>
+            <td colspan="3" class="tabel-1" width="20%">: <?=$instansi_singkat.' '.$kabkota_singkat?></td>
         </tr>
         <tr>
             <td></td>

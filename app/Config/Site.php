@@ -29,7 +29,7 @@ class Site extends BaseConfig {
     public $kodePejabatKetua = 'KPU-Kab';  
     public $kodePejabatSekretaris = 'Ses-Kab'; 
     public $nomor_bulan = false;  // nilai TRUE atau FALSE untuk memunculkan/tidak angka romawi bulan dalam format nomor ST
-    public $kodeSpd = 'RT.02.01-SPD/3301/PPK-Kab/3301';
+    public $kodeSpd = 'RT.02.01-SPD.LK/3301';
 
     //Dilarang merubah apapun mulai baris ini     
     public $web_title = "SPD ";

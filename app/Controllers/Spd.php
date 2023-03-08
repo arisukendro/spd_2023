@@ -421,7 +421,7 @@ class Spd extends BaseController
         
 		$mpdf->WriteHTML($html);
 		$this->response->setHeader('Content-Type', 'application/pdf');
-		$mpdf->Output('SPD-'.time(),'I'); // I=opens in browser; D=downloads
+		$mpdf->Output('SPD_LK '.time(),'I'); // I=opens in browser; D=downloads
 		
     }
     
