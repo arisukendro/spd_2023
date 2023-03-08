@@ -5,6 +5,7 @@
     <style>
     table {
         border-collapse: collapse;
+        vertical-align: top;
         /* overflow: wrap; */
     }
 
@@ -238,7 +239,7 @@
         <tr>
             <td colspan="6" rowspan="4" width="40%"></td>
             <td width="15pt">I</td>
-            <td colspan="2" >Berangkat dari<br />(tempat kedudukan)</td>
+            <td colspan="2">Berangkat dari<br />(tempat kedudukan)</td>
             <td colspan="3" class="tabel-1" width="20%">: <?=$instansi_singkat.' '.$kabkota_singkat?></td>
         </tr>
         <tr>

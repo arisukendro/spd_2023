@@ -32,8 +32,7 @@ class Site extends BaseConfig {
     public $kodeSpd = 'RT.02.01-SPD.LK/3301';
 
     //Dilarang merubah apapun mulai baris ini     
-    public $web_title = "SPD ";
+    public $web_title = "SPD";
     public $version = '2.0';
     public $themes = 'AdminLTE';
-
 }
