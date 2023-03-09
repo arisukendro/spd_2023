@@ -92,7 +92,8 @@
                         </a>
 
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer p-2 text-bold text-danger ">LOGOUT</a>
+                        <a href="<?=site_url('logout')?>"
+                            class="dropdown-item dropdown-footer p-2 text-bold text-danger ">LOGOUT</a>
                     </div>
                 </li>
             </ul>

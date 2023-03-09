@@ -29,14 +29,14 @@ class Spd extends BaseController
             'title_page' => 'SPD'
         ];
         
-        return view('spd/listData', $data);
+        return view('spd/list_data', $data);
     }
 
     public function listData(){
         if($this->request->isAJAX()){
             
-            $data_spd = $this->mSpd->like('tanggal_spd', date('Y'))
-                                ->orderBy('tanggal_spd', 'DESC')
+            $data_spd = $this->mSpd->like('tanggal_ttd_spd', date('Y'))
+                                ->orderBy('tanggal_ttd_spd', 'DESC')
                                 ->orderBy('id_spd', 'DESC')
                                 ->findAll();  
                                 ;
@@ -60,53 +60,50 @@ class Spd extends BaseController
             $isi_tabel = "";
             
             foreach ($data_spd as $row):                
-                $nomor_st = $row['nomor_spd']; 
+                $nomor_spd = $row['nomor_spd']; 
                 $ambil_angka = explode("/",$nomor_spd) [0];
                 $bersihkan_dot  = explode(".",$ambil_angka);	
                 $no_agenda	= $bersihkan_dot [0];
 
-                $isiTabel .= "
+                $row_st_personil = $this->mSTPersonil->where('id_st_personil', $row['st_personil_id'])->first();
+                $row_st = $this->mSuratTugas->where('id_st', $row_st_personil['surat_tugas_id'])->first();
+                
+                $isi_tabel .= "
                         <tr>
                             <td class=\"\">".$no_agenda."</td>                           
-                            <td>".$row['perihal_st']."<br>
-                                <span class=\"badge badge-success\">ST ".ucfirst($row['jabatan_ttd'])." Nomor: ".$row['nomor_st']."</span> 
-                                <span class=\"badge badge-warning\">Tanggal ST: ".$row['tanggal_st']."</span>
-                                <span class=\"badge badge-secondary\">Masa Tugas: ".$row['tanggal_berangkat']." s.d. ".$row['tanggal_berangkat'].
+                            <td>".$row_st['perihal_st']."<br>
+                                <span class=\"badge badge-danger\">".$row['jenis_formulir']."</span> 
+                                <span class=\"badge badge-success\">Nomor: ".$row['nomor_spd']."</span> 
+                                 <span class=\"badge badge-secondary\">Masa Tugas: ".$row_st['tanggal_berangkat']." s.d. ".$row_st['tanggal_berangkat'].
                                 "</span>
                             </td>
                             <td>";                            
                                 //dapetin lokasi
-                                $st_lokasi = $this->mSTLokasi->like('surat_tugas_id' , $row['id_st'])->findAll();
+                                $st_lokasi = $this->mSTLokasi->like('surat_tugas_id' , $row_st['id_st'])->findAll();
                                 
                                 foreach ($st_lokasi as $lok) :
-                                    $isiTabel .= "<span class=\"badge badge-info\">". $lok['nama_lokasi']. "</span> ";
+                                    $isi_tabel .= "<span class=\"badge badge-info\">". $lok['nama_lokasi']. "</span> ";
                                 endforeach;
                             
-                $isiTabel .="</td>
-                            <td>";
-                                //ambil personil
-                                $st_personil = $this->mSTPersonil->like('surat_tugas_id' , $row['id_st'])->findAll();
-                                foreach ($st_personil as $personil) :
-                                        $isiTabel .= "<span class=\"badge badge-dark\">". $personil['nama']. "</span> ";                                    
-                                endforeach;
-                                
-                $isiTabel .="</td>       
+                $isi_tabel .="</td>
+                            <td>
+                                ". $row_st_personil ['nama']. "
+                            </td>       
                             <td align=\"center\">
                                 <div class=\"btn-group\">
                                 <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\">
                                     Aksi
                                 </button>
                                 <div class=\"dropdown-menu\">
-                                    <a class=\"dropdown-item\"  href=\"".site_url('surattugas/cetak/').$row['id_st'] . "\" target=\"blank\">Cetak ST</a>
-                                    <a type=\"button\" class=\"dropdown-item\" onclick=\"spd(". $row['id_st'].")\">Buat SPD</a>
+                                    <a class=\"dropdown-item\"  href=\"".site_url('spd/cetak/').base64_encode($row['id_spd']). "\" target=\"blank\">Cetak SPD</a>
                                     <div class=\"dropdown-divider\"></div>
-                                    <a class=\"dropdown-item\" href=\"".site_url('surattugas/ubah/').base64_encode($row['id_st']). "\">Ubah Data</a>
-                                    <a type=\"button\" class=\"dropdown-item\"  onclick=\"hapus(". $row['id_st'].")\">Hapus Data</a>
+                                    <a type=\"button\" class=\"dropdown-item\" onclick=\"ubahSpd(".$row['id_spd'].")\"> Ubah Data</a>
+                                    <a type=\"button\" class=\"dropdown-item\"  onclick=\"hapusSpd(".$row['id_spd'].")\">Hapus Data</a>
                                 </div>
                                 </div>                                
                             </td>";
 
-                $isiTabel .="
+                $isi_tabel .="
                         </tr>";
                              
             endforeach;

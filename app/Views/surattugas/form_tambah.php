@@ -485,7 +485,7 @@ $(document).ready(function() {
         // format: 'L',
         format: 'YYYY-MM-DD',
         autoclose: true,
-        language: 'id'
+        language: 'id',
     });
 
 });
