@@ -63,6 +63,7 @@ class ComposerStaticInit3f65d2fe2e3a175b92dc9fa4fc194a2c
         ),
         'M' => 
         array (
+            'Myth\\Auth\\' => 10,
             'Mpdf\\' => 5,
         ),
         'L' => 
@@ -207,6 +208,10 @@ class ComposerStaticInit3f65d2fe2e3a175b92dc9fa4fc194a2c
         'Nexus\\CsConfig\\' => 
         array (
             0 => __DIR__ . '/..' . '/nexusphp/cs-config/src',
+        ),
+        'Myth\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/myth/auth/src',
         ),
         'Mpdf\\' => 
         array (
