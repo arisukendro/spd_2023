@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2023 at 04:03 AM
+-- Generation Time: Mar 12, 2023 at 11:55 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -20,6 +20,136 @@ SET time_zone = "+00:00";
 --
 -- Database: `spd_2023`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_activation_attempts`
+--
+
+CREATE TABLE `auth_activation_attempts` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `ip_address` varchar(255) NOT NULL,
+  `user_agent` varchar(255) NOT NULL,
+  `token` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_groups`
+--
+
+CREATE TABLE `auth_groups` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_groups_permissions`
+--
+
+CREATE TABLE `auth_groups_permissions` (
+  `group_id` int(11) UNSIGNED NOT NULL DEFAULT 0,
+  `permission_id` int(11) UNSIGNED NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_groups_users`
+--
+
+CREATE TABLE `auth_groups_users` (
+  `group_id` int(11) UNSIGNED NOT NULL DEFAULT 0,
+  `user_id` int(11) UNSIGNED NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_logins`
+--
+
+CREATE TABLE `auth_logins` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `ip_address` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `user_id` int(11) UNSIGNED DEFAULT NULL,
+  `date` datetime NOT NULL,
+  `success` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `auth_logins`
+--
+
+INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `success`) VALUES
+(1, '127.0.0.1', 'ari.sukendro@gmail.com', NULL, '2023-03-10 20:31:11', 0),
+(2, '127.0.0.1', 'ari.sukendro', NULL, '2023-03-10 20:31:26', 0),
+(3, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-10 20:33:16', 1),
+(4, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-10 20:43:02', 1),
+(5, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-11 05:19:56', 1),
+(6, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-11 09:19:14', 1),
+(7, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-11 21:19:43', 1),
+(8, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-13 05:39:03', 1),
+(9, '127.0.0.1', 'arisukendro@gmail.com', 1, '2023-03-13 05:49:54', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_permissions`
+--
+
+CREATE TABLE `auth_permissions` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_reset_attempts`
+--
+
+CREATE TABLE `auth_reset_attempts` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `ip_address` varchar(255) NOT NULL,
+  `user_agent` varchar(255) NOT NULL,
+  `token` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_tokens`
+--
+
+CREATE TABLE `auth_tokens` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `selector` varchar(255) NOT NULL,
+  `hashedValidator` varchar(255) NOT NULL,
+  `user_id` int(11) UNSIGNED NOT NULL,
+  `expires` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_users_permissions`
+--
+
+CREATE TABLE `auth_users_permissions` (
+  `user_id` int(11) UNSIGNED NOT NULL DEFAULT 0,
+  `permission_id` int(11) UNSIGNED NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -99,12 +229,32 @@ INSERT INTO `lokasi` (`id_lokasi`, `nama_lokasi`, `alamat`, `kota_lokasi`, `crea
 (29, 'Hotel Laras Asri Salatiga', '', 'Salatiga', '2023-01-22 22:55:59', '2023-01-22 22:55:59', '0000-00-00 00:00:00'),
 (30, 'Hotel Sindoro Cilacap', '', 'Cilacap', '2023-01-22 22:58:39', '2023-01-22 22:59:19', '0000-00-00 00:00:00'),
 (31, 'nusawungu', '', 'nsqunu', '2023-01-22 23:10:42', '2023-03-04 13:45:09', '0000-00-00 00:00:00'),
-(35, 'test', '', 'test', '2023-01-22 23:17:22', '2023-01-22 23:17:22', '0000-00-00 00:00:00'),
 (39, 'kantor kelurahan', '', 'lokasinya mana', '2023-01-25 18:00:07', '2023-01-25 18:00:07', '0000-00-00 00:00:00'),
-(40, 'cojadsa', 'asdna', 'sadaskjd', '2023-02-24 07:23:57', '2023-02-24 07:23:57', '0000-00-00 00:00:00'),
 (41, 'bukan laras asri', '', 'bukan saatiga', '2023-02-25 06:13:40', '2023-02-25 06:13:40', '0000-00-00 00:00:00'),
-(42, 'cilacap utara', '', 'cilacap', '2023-02-25 10:58:44', '2023-02-25 10:58:44', '0000-00-00 00:00:00'),
-(43, 'ini baru', '', 'kotanya sini', '2023-03-04 15:17:06', '2023-03-04 15:17:06', '0000-00-00 00:00:00');
+(42, 'cilacap utara', '', 'cilacap', '2023-02-25 10:58:44', '2023-02-25 10:58:44', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `version` varchar(255) NOT NULL,
+  `class` varchar(255) NOT NULL,
+  `group` varchar(255) NOT NULL,
+  `namespace` varchar(255) NOT NULL,
+  `time` int(11) NOT NULL,
+  `batch` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
+(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1678285696, 1);
 
 -- --------------------------------------------------------
 
@@ -233,11 +383,17 @@ CREATE TABLE `spd` (
 --
 
 INSERT INTO `spd` (`id_spd`, `nomor_spd`, `st_personil_id`, `kendaraan`, `tingkat_spd`, `sumber_dana`, `jenis_formulir`, `akun_anggaran`, `kota_ttd_spd`, `tanggal_ttd_spd`, `jabatan_ttd_spd`, `nama_ttd_spd`, `nip_ttd_spd`, `created_at`, `created_by`, `updated_at`, `updated_by`, `deleted_at`, `deleted_by`) VALUES
-(18, '2/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 59, '', 'Tingkat C', '', 'SPD', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 15:10:33', 1, '2023-03-07 20:52:18', 2, '0000-00-00 00:00:00', 0),
-(22, '5/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 64, 'Kendaraan', 'Tingkat C', 'APBN', 'SPD', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 20:15:36', 1, '2023-03-07 20:15:36', 0, '0000-00-00 00:00:00', 0),
-(23, '6/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 65, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 20:16:02', 1, '2023-03-07 20:16:02', 0, '0000-00-00 00:00:00', 0),
-(24, '7/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 62, 'Kendaraan', 'Tingkat C', 'APBN', 'SPD', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 21:21:08', 1, '2023-03-07 21:21:08', 0, '0000-00-00 00:00:00', 0),
-(25, '8/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 63, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 21:21:14', 1, '2023-03-07 21:21:14', 0, '0000-00-00 00:00:00', 0);
+(24, '7/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 62, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 21:21:08', 1, '2023-03-11 05:21:58', 2, '0000-00-00 00:00:00', 0),
+(25, '8/RT.02.01-SPD/3301/PPK-Kab/3301/2023', 63, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-07 21:21:14', 1, '2023-03-11 05:22:03', 2, '0000-00-00 00:00:00', 0),
+(27, '9/RT.02.01-SPD.LK/3301/2023', 81, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-11', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:20:46', 1, '2023-03-11 05:20:46', 0, '0000-00-00 00:00:00', 0),
+(28, '10/RT.02.01-SPD.LK/3301/2023', 82, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-11', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:20:54', 1, '2023-03-11 05:20:54', 0, '0000-00-00 00:00:00', 0),
+(29, '11/RT.02.01-SPD.LK/3301/2023', 83, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-11', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:01', 1, '2023-03-11 05:21:01', 0, '0000-00-00 00:00:00', 0),
+(30, '12/RT.02.01-SPD.LK/3301/2023', 84, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-11', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:07', 1, '2023-03-11 05:21:07', 0, '0000-00-00 00:00:00', 0),
+(31, '13/RT.02.01-SPD.LK/3301/2023', 85, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-11', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:13', 1, '2023-03-11 05:21:13', 0, '0000-00-00 00:00:00', 0),
+(33, '15/RT.02.01-SPD.LK/3301/2023', 79, 'Kendaraan', 'Tingkat C', 'APBN', 'SPD', '', 'Cilacap', '2023-03-10', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:35', 1, '2023-03-11 05:21:35', 0, '0000-00-00 00:00:00', 0),
+(34, '16/RT.02.01-SPD.LK/3301/2023', 80, 'Kendaraan', 'Tingkat C', 'APBN', 'SPD', '', 'Cilacap', '2023-03-10', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:38', 1, '2023-03-11 05:21:38', 0, '0000-00-00 00:00:00', 0),
+(35, '17/RT.02.01-SPD.LK/3301/2023', 59, 'Kendaraan', 'Tingkat C', 'APBN', 'Lembar Konfirmasi', '', 'Cilacap', '2023-03-07', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 05:21:51', 1, '2023-03-11 05:21:51', 0, '0000-00-00 00:00:00', 0),
+(36, '18/RT.02.01-SPD.LK/3301/2023', 78, 'Kendaraan', 'Tingkat C', 'APBN', 'SPD', '', 'Cilacap', '2023-03-10', 'Pejabat Pembuat Komitmen', 'Hari Sugiharto', 66, '2023-03-11 09:21:30', 1, '2023-03-11 09:21:30', 0, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -302,8 +458,9 @@ CREATE TABLE `surat_tugas` (
 --
 
 INSERT INTO `surat_tugas` (`id_st`, `perihal_st`, `jenis_st`, `nomor_st`, `tanggal_st`, `dasar_st`, `tanggal_berangkat`, `tanggal_kembali`, `kota_ttd`, `jabatan_ttd`, `nama_ttd`, `created_at`, `created_by`, `updated_at`, `updated_by`, `deleted_at`, `deleted_by`) VALUES
-(14, 'perihal', 'sekretaris', '1/RT.02.01-ST/3301/Ses-Kab/2023', '2023-03-07', 'dasar ST', '2023-03-07', '2023-03-07', 'Cilacap', 'Sekretaris', 'Karsito', '2023-03-07 15:10:20', 1, '2023-03-07 17:55:37', 0, '0000-00-00 00:00:00', 0),
-(15, 'perihal sekre akdlsakj lasdjlskajd lkajdlsajd lkasjdlsajkd klsajdlksajdl', 'sekretaris', '2/RT.02.01-ST/3301/Ses-Kab/2023', '2023-03-07', 'Dasar Ketua', '2023-03-07', '2023-03-07', 'Cilacap', 'Sekretaris', 'Karsito', '2023-03-07 20:13:44', 1, '2023-03-07 20:13:44', 0, '0000-00-00 00:00:00', 0);
+(14, 'perihal', 'sekretaris', '1/RT.02.01-ST/3301/Ses-Kab/2023', '2023-03-07', 'dasar ST', '2023-01-11', '2023-03-07', 'Cilacap', 'Sekretaris', 'Karsito', '2023-03-07 15:10:20', 1, '2023-03-07 17:55:37', 0, '0000-00-00 00:00:00', 0),
+(16, 'perihal 2', 'sekretaris', '2/RT.02.01-ST/3301/Ses-Kab/2023', '2023-03-10', 'dasar 2', '2023-03-10', '2023-03-10', 'Cilacap', 'Sekretaris', 'Karsito', '2023-03-10 23:56:15', 1, '2023-03-10 23:56:15', 0, '0000-00-00 00:00:00', 0),
+(17, 'perihal sekre akdlsakj lasdjlskajd lkajdlsajd lkasjdlsajkd klsajdlksajdl', 'ketua', '3/RT.02.01-ST/3301/KPU-Kab/2023', '2023-03-11', 'Dasar Ketua', '2023-03-11', '2023-03-11', 'Cilacap', 'Ketua', 'Handi Tri Ujiono', '2023-03-11 05:20:33', 1, '2023-03-11 05:20:33', 0, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -328,8 +485,9 @@ CREATE TABLE `surat_tugas_lokasi` (
 
 INSERT INTO `surat_tugas_lokasi` (`id_st_lokasi`, `surat_tugas_id`, `nama_lokasi`, `alamat_lokasi`, `kota_lokasi`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (75, 14, 'Hotel Sindoro Cilacap', '', 'Cilacap', '2023-03-07 17:55:37', '2023-03-07 17:55:37', '0000-00-00 00:00:00'),
-(76, 15, 'bukan laras asri', '', 'bukan saatiga', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(77, 15, 'Hotel Laras Asri Salatiga', '', 'Salatiga', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00');
+(78, 16, 'cilacap utara', '', 'cilacap', '2023-03-10 23:56:15', '2023-03-10 23:56:15', '0000-00-00 00:00:00'),
+(79, 16, 'cojadsa', 'asdna', 'sadaskjd', '2023-03-10 23:56:15', '2023-03-10 23:56:15', '0000-00-00 00:00:00'),
+(80, 17, 'cojadsa', 'asdna', 'sadaskjd', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -360,20 +518,14 @@ INSERT INTO `surat_tugas_personil` (`id_st_personil`, `surat_tugas_id`, `pegawai
 (59, 14, 9, 'Ari Sukendro, S.Kom', '3i4923i4092i40932i4', NULL, 'IIIb', 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Teknis  Pemilu & Hupmas)', '2023-03-07 15:10:20', '2023-03-07 15:10:20', '0000-00-00 00:00:00'),
 (62, 14, 22, 'Joko Amboro', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 17:55:37', '2023-03-07 17:55:37', '0000-00-00 00:00:00'),
 (63, 14, 17, 'Yuni Artiti, S.I.P', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 17:55:37', '2023-03-07 17:55:37', '0000-00-00 00:00:00'),
-(64, 15, 12, 'Anggit Purnomo, A.Md', '', NULL, 'IId', 'Sekretariat KPU Kab. Cilacap', 'Fungsional Bendahara (-)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(65, 15, 9, 'Ari Sukendro, S.Kom', '3i4923i4092i40932i4', NULL, 'IIIb', 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Teknis  Pemilu & Hupmas)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(66, 15, 18, 'Dading Ardiyanto, S.I.P', '888', NULL, 'IIIc', 'Sekretariat KPU Kab. Cilacap', 'Kasubbag (Subbag Hukum & SDM)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(67, 15, 25, 'Dwipa Tri Budi, A.Md', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Teknis  Pemilu & Hupmas)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(68, 15, 13, 'Hari Sugiharto, SH, MH', '72281737897937293729', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Kasubbag (Subbag Hukum & SDM)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(69, 15, 22, 'Joko Amboro', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(70, 15, 27, 'Laila Isnaini, S.Sos', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Kasubbag (Subbag Datin)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(71, 15, 24, 'Oktaf Giar Purnomo', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(72, 15, 21, 'Rahmat Yulianto', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(73, 15, 19, 'Riyanto', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(74, 15, 26, 'Sri Andriyani, S.Sos', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Datin)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(75, 15, 20, 'Suprapto', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(76, 15, 23, 'Yasin', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00'),
-(77, 15, 17, 'Yuni Artiti, S.I.P', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag KUL)', '2023-03-07 20:13:44', '2023-03-07 20:13:44', '0000-00-00 00:00:00');
+(78, 16, 9, 'Ari Sukendro, S.Kom', '3i4923i4092i40932i4', NULL, 'IIIb', 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Teknis  Pemilu & Hupmas)', '2023-03-10 23:56:15', '2023-03-10 23:56:15', '0000-00-00 00:00:00'),
+(79, 16, 18, 'Dading Ardiyanto, S.I.P', '888', NULL, 'IIIc', 'Sekretariat KPU Kab. Cilacap', 'Kasubbag (Subbag Hukum & SDM)', '2023-03-10 23:56:15', '2023-03-10 23:56:15', '0000-00-00 00:00:00'),
+(80, 16, 25, 'Dwipa Tri Budi, A.Md', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Staf (Subbag Teknis  Pemilu & Hupmas)', '2023-03-10 23:56:15', '2023-03-10 23:56:15', '0000-00-00 00:00:00'),
+(81, 17, 16, 'Ami Purwandari, SE', '', NULL, NULL, 'KPU Kab.  Cilacap', 'Anggota (Divisi Datin dan Mutralih)', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00'),
+(82, 17, 11, 'Handi Tri Ujiono, S.Sos', '', NULL, NULL, 'KPU Kab.  Cilacap', 'Ketua (Divisi Keuangan & Logistik)', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00'),
+(83, 17, 10, 'Karsito, S.Sos', '', NULL, NULL, 'Sekretariat KPU Kab. Cilacap', 'Sekretaris (-)', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00'),
+(84, 17, 15, 'M. Muhni, S.Pd.I', '', NULL, NULL, 'KPU Kab.  Cilacap', 'Anggota (Divisi Sosialisasi & SDM)', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00'),
+(85, 17, 14, 'Weweng Maretno, S.Sos', '', NULL, NULL, 'KPU Kab.  Cilacap', 'Anggota (Divisi Teknis Penyelengaraan)', '2023-03-11 05:20:33', '2023-03-11 05:20:33', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -406,29 +558,94 @@ INSERT INTO `template_surat_tugas` (`id_template_st`, `nomor_urut`, `keterangan`
 --
 
 CREATE TABLE `users` (
-  `id_user` int(11) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `created_by` int(11) DEFAULT NULL,
-  `updated_at` datetime NOT NULL,
-  `updated_by` int(11) DEFAULT NULL,
-  `deleted_at` datetime NOT NULL,
-  `deleted_by` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` int(11) UNSIGNED NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `username` varchar(30) DEFAULT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `reset_hash` varchar(255) DEFAULT NULL,
+  `reset_at` datetime DEFAULT NULL,
+  `reset_expires` datetime DEFAULT NULL,
+  `activate_hash` varchar(255) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  `status_message` varchar(255) DEFAULT NULL,
+  `active` tinyint(1) NOT NULL DEFAULT 0,
+  `force_pass_reset` tinyint(1) NOT NULL DEFAULT 0,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_user`, `username`, `nama`, `password`, `created_at`, `created_by`, `updated_at`, `updated_by`, `deleted_at`, `deleted_by`) VALUES
-(1, 'kendro', 'Ari Kendro', 'password', '2023-02-26 00:03:39', 0, '2023-02-26 00:03:39', 0, '2023-02-26 00:03:39', 0),
-(2, 'prapto', 'Suprapto', 'password', '2023-02-26 00:07:54', NULL, '2023-02-26 00:07:54', NULL, '2023-02-26 00:07:54', NULL);
+INSERT INTO `users` (`id`, `email`, `username`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'arisukendro@gmail.com', 'arisukendro', '$2y$10$lMAuv7xN/6FtM6Jfd6l/behajHpcGo.1hSpsB7U0s9a9jHb/9dP9W', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-03-10 20:33:04', '2023-03-10 20:33:04', NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `auth_activation_attempts`
+--
+ALTER TABLE `auth_activation_attempts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `auth_groups`
+--
+ALTER TABLE `auth_groups`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `auth_groups_permissions`
+--
+ALTER TABLE `auth_groups_permissions`
+  ADD KEY `auth_groups_permissions_permission_id_foreign` (`permission_id`),
+  ADD KEY `group_id_permission_id` (`group_id`,`permission_id`);
+
+--
+-- Indexes for table `auth_groups_users`
+--
+ALTER TABLE `auth_groups_users`
+  ADD KEY `auth_groups_users_user_id_foreign` (`user_id`),
+  ADD KEY `group_id_user_id` (`group_id`,`user_id`);
+
+--
+-- Indexes for table `auth_logins`
+--
+ALTER TABLE `auth_logins`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `email` (`email`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `auth_permissions`
+--
+ALTER TABLE `auth_permissions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `auth_reset_attempts`
+--
+ALTER TABLE `auth_reset_attempts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `auth_tokens`
+--
+ALTER TABLE `auth_tokens`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `auth_tokens_user_id_foreign` (`user_id`),
+  ADD KEY `selector` (`selector`);
+
+--
+-- Indexes for table `auth_users_permissions`
+--
+ALTER TABLE `auth_users_permissions`
+  ADD KEY `auth_users_permissions_permission_id_foreign` (`permission_id`),
+  ADD KEY `user_id_permission_id` (`user_id`,`permission_id`);
 
 --
 -- Indexes for table `jabatan`
@@ -448,6 +665,12 @@ ALTER TABLE `klompeg`
 --
 ALTER TABLE `lokasi`
   ADD PRIMARY KEY (`id_lokasi`);
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `pegawai`
@@ -510,11 +733,49 @@ ALTER TABLE `template_surat_tugas`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id_user`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `auth_activation_attempts`
+--
+ALTER TABLE `auth_activation_attempts`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `auth_groups`
+--
+ALTER TABLE `auth_groups`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `auth_logins`
+--
+ALTER TABLE `auth_logins`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `auth_permissions`
+--
+ALTER TABLE `auth_permissions`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `auth_reset_attempts`
+--
+ALTER TABLE `auth_reset_attempts`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `auth_tokens`
+--
+ALTER TABLE `auth_tokens`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `jabatan`
@@ -533,6 +794,12 @@ ALTER TABLE `klompeg`
 --
 ALTER TABLE `lokasi`
   MODIFY `id_lokasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pegawai`
@@ -556,7 +823,7 @@ ALTER TABLE `pengaturan`
 -- AUTO_INCREMENT for table `spd`
 --
 ALTER TABLE `spd`
-  MODIFY `id_spd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_spd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `subbag`
@@ -568,35 +835,62 @@ ALTER TABLE `subbag`
 -- AUTO_INCREMENT for table `surat_tugas`
 --
 ALTER TABLE `surat_tugas`
-  MODIFY `id_st` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_st` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `surat_tugas_lokasi`
 --
 ALTER TABLE `surat_tugas_lokasi`
-  MODIFY `id_st_lokasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id_st_lokasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `surat_tugas_personil`
 --
 ALTER TABLE `surat_tugas_personil`
-  MODIFY `id_st_personil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id_st_personil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
 -- AUTO_INCREMENT for table `template_surat_tugas`
 --
 ALTER TABLE `template_surat_tugas`
-  MODIFY `id_template_st` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_template_st` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `auth_groups_permissions`
+--
+ALTER TABLE `auth_groups_permissions`
+  ADD CONSTRAINT `auth_groups_permissions_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `auth_groups_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `auth_groups_users`
+--
+ALTER TABLE `auth_groups_users`
+  ADD CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `auth_groups_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `auth_tokens`
+--
+ALTER TABLE `auth_tokens`
+  ADD CONSTRAINT `auth_tokens_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `auth_users_permissions`
+--
+ALTER TABLE `auth_users_permissions`
+  ADD CONSTRAINT `auth_users_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `auth_users_permissions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `jabatan`
