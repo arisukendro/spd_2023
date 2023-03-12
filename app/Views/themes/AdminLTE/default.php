@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= config('site')->web_title?> |</title>
+    <title><?=config('site')->app_name.' '.config('site')->ibukota. ' v'.config('site')->app_version?> </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"

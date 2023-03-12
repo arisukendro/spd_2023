@@ -174,7 +174,7 @@ class Auth extends BaseConfig
      *
      * @var bool
      */
-    public $allowRegistration = true;
+    public $allowRegistration = false;
 
     /**
      * --------------------------------------------------------------------
@@ -199,7 +199,8 @@ class Auth extends BaseConfig
      *
      * @var string|null Name of the ResetterInterface class
      */
-    public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
+    public $activeResetter = NULL;
+    // public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
 
     /**
      * --------------------------------------------------------------------
@@ -214,7 +215,7 @@ class Auth extends BaseConfig
      *
      * @var bool
      */
-    public $allowRemembering = false;
+    public $allowRemembering = true;
 
     /**
      * --------------------------------------------------------------------
@@ -226,7 +227,7 @@ class Auth extends BaseConfig
      *
      * @var int
      */
-    public $rememberLength = 30 * DAY;
+    public $rememberLength = 3 * DAY;
 
     /**
      * --------------------------------------------------------------------
