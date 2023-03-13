@@ -8,7 +8,6 @@ class Pengaturan extends BaseController
         $config = new \Config\Site();
         
         $data = [
-            'themes' => $this->siteConfig->themes,
             'title_page' => 'Pejabat Penandatangan Dokumen'
         ];
         return view('pengaturan/penandatangan', $data);

@@ -8,7 +8,6 @@ class Jabatan extends BaseController
 {
     public function index() {        
         $data = [
-            'themes'=> $this->siteConfig->themes,
             'title_page' => "Data Jabatan"
         ];
         return view('jabatan/tampildata', $data);

@@ -1,4 +1,5 @@
-<?=$this->extend('themes/'.$themes.'/default')?>
+<?=$this->extend('themes/'.config('site')->themes.'/default')?>
+
 
 <?=$this->section('content')?>
 

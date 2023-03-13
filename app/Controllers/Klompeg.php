@@ -9,8 +9,6 @@ class Klompeg extends BaseController
         $config = new \Config\Site();
         
         $data = [
-            // 'kabkota' => $config->kabkota,
-            'themes' => $config->themes,
             'title_page' => 'Data Klompeg'
         ];
         return view('klompeg/tampildata', $data);

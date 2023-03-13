@@ -8,7 +8,6 @@ class Lokasi extends BaseController
     public function index() {        
         
         $data = [
-            'themes' => $this->siteConfig->themes,
             'title_page' => 'Data Lokasi'
         ];
         return view('lokasi/tampildata', $data);

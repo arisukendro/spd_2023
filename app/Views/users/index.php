@@ -11,7 +11,7 @@
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <div class="breadcrumb float-sm-right">
-                    <button type="button" class="btn btn-primary tambahData"><i class="fa fa-plus-circle"
+                    <button type="button" class="btn btn-primary tomboltambah"><i class="fa fa-plus-circle"
                             data-toggle="modal" data-target="#viewmodal"></i> Tambah</button>
                 </div>
             </div><!-- /.col -->
@@ -38,9 +38,9 @@
 
 <!-- Page specific script -->
 <script>
-function datalokasi() {
+function listData() {
     $.ajax({
-        url: "<?=site_url('lokasi/ambildata')?>",
+        url: "<?=site_url('users/listData')?>",
         dataType: "json",
         success: function(response) {
             $('.viewdata').html(response.data)
@@ -51,10 +51,10 @@ function datalokasi() {
     });
 }
 
-$('.tambahData').click(function(e) {
+$('.tomboltambah').click(function(e) {
     e.preventDefault();
     $.ajax({
-        url: "<?=site_url('lokasi/formtambah')?>",
+        url: "<?=site_url('users/create')?>",
         dataType: "json",
         success: function(response) {
             $('.viewmodal').html(response.data).show();
@@ -67,7 +67,8 @@ $('.tambahData').click(function(e) {
 });
 
 $(document).ready(function() {
-    datalokasi();
+    listData();
+    $('.select2').select2();
 });
 </script>
 

@@ -8,7 +8,6 @@ class Subbag extends BaseController
 {
     public function index() {        
         $data = [
-            'themes' => $this->siteConfig->themes,
             'title_page' => 'Data Subbag/Divisi'
         ];
         return view('subbag/tampildata', $data);

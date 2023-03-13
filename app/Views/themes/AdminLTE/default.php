@@ -73,12 +73,12 @@
                 <!-- Notifications Dropdown Menu -->
                 <li class="nav-item dropdown ">
                     <a class=" nav-link border rounded border-warning " data-toggle="dropdown" href="#">
-                        Kendroisme <i class="far fa-user-circle text-warning"></i>
+                        <?=user()->username?> <i class="far fa-user-circle text-warning"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <span class="dropdown-header">Level : Administrator</span>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="" class="dropdown-item">
                             <i class="fas fa-key mr-2"></i> Ganti Password
                         </a>
                         <div class="dropdown-divider"></div>
@@ -87,7 +87,7 @@
                         </a>
 
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="<?=site_url('users')?>" class="dropdown-item">
                             <i class="fas fa-users mr-2"></i> Manajemen User
                         </a>
 

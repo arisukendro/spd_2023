@@ -48,7 +48,7 @@
         <thead>
             <tr>
                 <td rowspan="3">
-                    <img width="30pt" src="<?=base_url().'/img/logo_kpu.png'?>">
+                    <img width="25pt" src="<?=base_url().'/img/logo_kpu.png'?>">
 
                 </td>
                 <td rowspan="3"><b><?=strtoupper($instansi).'<br>'.strtoupper($kabkota)?></b></td>
@@ -237,10 +237,10 @@
     <div style="page-break-after:always;"></div>
     <table class="table-no-border " style="border:1px solid #000" width="100%">
         <tr>
-            <td colspan="6" rowspan="4" width="40%"></td>
+            <td colspan="6" rowspan="4" width="50%"></td>
             <td width="15pt">I</td>
             <td colspan="2">Berangkat dari<br />(tempat kedudukan)</td>
-            <td colspan="3" class="tabel-1" width="20%">: <?=$instansi_singkat.' '.$kabkota_singkat?></td>
+            <td colspan="3" width="20%">: <?=$instansi_singkat.' '.$kabkota_singkat?></td>
         </tr>
         <tr>
             <td></td>
@@ -323,7 +323,7 @@
 			echo angka_romawi($x);
 			?>
             </td>
-            <td colspan="2" with="18pt">Tiba di <br />(tempat kedudukan)</td>
+            <td colspan="2" with="18pt">Tiba di </td>
             <td colspan="3">: <?=$ibukota?><br></td>
             <td></td>
             <td colspan="5" rowspan="2" style="text-align:justify">Telah diperiksa dengan keterangan bahwa perjalanan

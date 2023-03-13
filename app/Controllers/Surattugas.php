@@ -27,7 +27,6 @@ class Surattugas extends BaseController
     public function index() {        
         $data = [
             'title_page' => 'Data Surat Tugas',
-            'js' => 'surattugas/buatSpd.js',
         ];
         
         return view('surattugas/tampildata', $data);
@@ -146,7 +145,7 @@ class Surattugas extends BaseController
                                 <tr>
                                     <td class=\"text-bold\">".$personil['nama']."</td>
                                     <td>".$personil['jabatan']."</td>
-                                    <td><button type=\"button\" class=\"btn btn-primary buatSpd\" onclick=\"buatSpd(". $personil['id_st_personil'].")\">Buat SPD</button></td> 
+                                    <td><button type=\"button\" class=\"btn btn-sm btn-primary buatSpd\" onclick=\"buatSpd(". $personil['id_st_personil'].")\">Buat SPD</button></td> 
                                 </tr>
                                 ";
                 }else{
@@ -249,8 +248,9 @@ class Surattugas extends BaseController
                             <td>'.$row['nama'].'</td>
                             <td>'.$row['nama_jabatan'].'</td>
                             <td>
-                                <button type="button" class="btn btn-default btn-xs " onclick="cek("'.$row['id_pegawai'].' ")">
-                                    <i class="fa fa-eye"></i></button>
+                            <button type="button" class="btn btn-sm" onclick="cekPersonil('.$row['id_pegawai']. ')"><i
+                        class="fa fa-eye text-primary"></i></button>                  
+                                
                             </td>
                             </tr>
                 ';

@@ -208,6 +208,31 @@ $("#reload_nomor").click(function() {
     reload_nomor();
 });
 
+
+function cekPersonil(id) {
+    $.ajax({
+        type: "post",
+        url: "<?=site_url('laporan/cekPersonil/')?>",
+        data: {
+            idPersonil: id
+        },
+        dataType: "json",
+
+        success: function(response) {
+            if (response.sukses) {
+                $('.viewmodal').html(response.sukses).show();
+                $('#modalCekPersonil').modal('show');
+            }
+        },
+
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+        },
+
+    });
+}
+
+
 function getLokasi() {
     $.ajax({
         type: "post",

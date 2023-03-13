@@ -130,6 +130,9 @@ function dataKlompeg() {
 
 }
 
+
+
+
 $('.formpegawai').submit(function(e) {
     e.preventDefault();
 

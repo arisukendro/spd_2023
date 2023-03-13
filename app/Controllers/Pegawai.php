@@ -11,7 +11,6 @@ class Pegawai extends BaseController
     public function index() {        
         
         $data = [
-            'themes' =>  $this->siteConfig->themes,
             'title_page' => 'Data Pegawai'
         ];
         
@@ -24,6 +23,7 @@ class Pegawai extends BaseController
             $data = [
                 'tampildata' => $mPegawai->tampilSemua(), 
             ]; 
+            
             $msg = [
                 'data' => view('pegawai/tabeldata', $data)                
             ];
@@ -153,7 +153,7 @@ class Pegawai extends BaseController
             $mPegawai = new PegawaiModel;
             
             $idPegawai = $this->request->getVar('id_pegawai');
-            $row = $mPegawai->tampilId($idPegawai);
+            $row = $mPegawai->selectId($idPegawai);
 
             $data = [
                 'id_pegawai' => $row['id_pegawai'],

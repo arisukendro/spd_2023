@@ -6,14 +6,11 @@ use App\Models\PegawaiModel;
 
 class Penandatangan extends BaseController
 {
-    public function index() {    
-        
-        
+    public function index() {            
         $data = [
             'title_page' => 'Pengaturan: Pejabat Penandatangan',
-            'themes' => $this->siteConfig->themes,
         ];
-        return view('penandatangan/tampildata', $data);
+        return view('penandatangan/home', $data);
 
     }
 
