@@ -22,10 +22,10 @@ class UsersModel extends Model
    public function selectId($id)
     {
          return $this->db->table($this->table)
-        //  ->join('klompeg','klompeg.id_klompeg='.$this->table.'.klompeg_id')
-        //  ->join('subbag','subbag.id_subbag = '.$this->table.'.subbag_id')
-        //  ->join('jabatan','jabatan.id_jabatan = '.$this->table.'.jabatan_id')
-        //  ->where($this->primaryKey, $id)
+        ->select('users.id user_id, username, email, active, agu.group_id, ag.id group_id, ag.name group_name, ag.description group_description')
+         ->join('auth_groups_users agu','agu.user_id= '.$this->table.'.id')
+         ->join('auth_groups ag','ag.id = agu.group_id')
+         ->where('users.id', $id)
          ->get()
          ->getRowArray();  
     }

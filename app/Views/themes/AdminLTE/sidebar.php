@@ -71,6 +71,14 @@
 
 <li class="nav-header text-bold text-warning">PENGATURAN</li>
 <li class="nav-item">
+    <a href="<?=site_url('users')?>" class="nav-link">
+        <i class="nav-icon fa fa-user-circle"></i>
+        <p>
+            Users
+        </p>
+    </a>
+</li>
+<li class="nav-item">
     <a href="<?=site_url('penandatangan')?>" class="nav-link">
         <i class="nav-icon fa fa-bookmark"></i>
         <p>

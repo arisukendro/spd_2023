@@ -130,7 +130,7 @@
                     }
 
 
-                    if (response.error.subbag) {
+                    if (response.error.password) {
                         $('#subbag').addClass('is-invalid');
                         $('.error_subbag').html(response.error.subbag)
                     } else {

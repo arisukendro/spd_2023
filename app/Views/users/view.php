@@ -1,26 +1,20 @@
 <!-- Modal -->
-<div class="modal fade" id="modalview" tabindex="-1" role="dialog">
+<div class="modal fade" id="modal-view" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- Profile Image -->
             <div class="modal-body">
                 <div class="box-profile">
-                    <h3 class="profile-username text-center"><?= $nama ?></h3>
+                    <h3 class="profile-username text-center"><?= $username ?></h3>
 
-                    <p class="text-muted text-center"><?= $nama_jabatan.' / '. $nama_klompeg ?></p>
+                    <p class="text-muted text-center">Level <?= $group_description ?></p>
 
                     <ul class="list-group list-group-unbordered mb-3">
                         <li class="list-group-item">
-                            <b>NIP</b> <a class="float-right"><?= $nip ?></a>
+                            <b>Email</b> <a class="float-right"><?= $email ?></a>
                         </li>
                         <li class="list-group-item">
-                            <b>Pangkat/Gol</b> <a class="float-right"><?= $pangkat.'/'.$golongan?></a>
-                        </li>
-                        <li class="list-group-item">
-                            <b>Subbag/Divisi</b> <a class="float-right"><?= $nama_subbag?></a>
-                        </li>
-                        <li class="list-group-item">
-                            <b>Status</b> <a class="float-right"><?= $aktif==1?'Aktif':'Non Aktif' ?></a>
+                            <b>Status User</b> <a class="float-right"><?= $active == 1 ? 'Aktif' : 'Non Aktif'?></a>
                         </li>
                     </ul>
 

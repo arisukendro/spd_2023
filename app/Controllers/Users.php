@@ -39,13 +39,34 @@ class Users extends BaseController
         }
     }
 
+    public function viewDetil(){
+        if($this->request->isAJAX()){            
+            $id_user = $this->request->getVar('id_user');
+            $row = $this->mUsers->selectId($id_user);
+            
+            $data = [
+                'user_id' => $row['user_id'],
+                'username' => $row['username'],
+                'email' => $row['email'],
+                'active' => $row['active'],
+                'group_description' => $row['group_description'],
+            ];
+
+            $msg = [
+                'sukses' => view('users/view', $data)                
+            ];
+            
+            echo json_encode($msg);   
+        }
+    }
+    
     public function formEdit(){
         if($this->request->isAJAX()){
             $id = $this->request->getVar('id');
             
             $row = $this->mUser->find($id);
             $data = [
-                'id' => $row['id'],
+                'user_id' => $row['user_id'],
                 'email' => $row['email'],
                 'username' => $row['username'],
                 'active' => $row['active'],
