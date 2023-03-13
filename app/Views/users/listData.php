@@ -73,7 +73,7 @@ function view(id) {
 function edit(id) {
     $.ajax({
         type: "post",
-        url: "<?=site_url('users/formedit')?>",
+        url: "<?=site_url('users/formEdit')?>",
         data: {
             id_pegawai: id_pegawai
         },

@@ -39,4 +39,24 @@ class Users extends BaseController
         }
     }
 
+    public function formEdit(){
+        if($this->request->isAJAX()){
+            $id = $this->request->getVar('id');
+            
+            $row = $this->mUser->find($id);
+            $data = [
+                'id' => $row['id'],
+                'email' => $row['email'],
+                'username' => $row['username'],
+                'active' => $row['active'],
+            ];
+
+            $msg = [
+                'sukses' => view('users/form_edit', $data)                
+            ];
+            
+            echo json_encode($msg);   
+        }
+    }
+
 }
