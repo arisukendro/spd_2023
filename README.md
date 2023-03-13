@@ -1,12 +1,9 @@
 # SPD KPU v.2
 
 ## Aplikasi apa ini?
-
 Aplikasi SPD ini dibuat untuk digunakan di KPU Kab. Cilacap, namun tidak menutup kemungkinan juga bisa diterapkan di KPU Kabupaten/kota yang lain. Versi 2 merupakan pengembangan dari versi sebelumnya dan sekarang dibuat menggunakan framework CodeIgniter 4. 
 
-
 ## Kebutuhan Minimal
-
 Aplikasi ini dapat diinstall dalam komputer dengan spesifikasi yang relatif rendah dan di Sistem Operasi apapun (disarankan Linux OS), dengan minimal RAM 2 GB. 
 PHP versi 7.4 atau lebih tinggi, atau untuk kemudahan bisa menginstall Xampp (apachefriends.org)
 
@@ -22,10 +19,11 @@ PHP versi 7.4 atau lebih tinggi, atau untuk kemudahan bisa menginstall Xampp (ap
 
 ## Catatan Release
 @ 1 Ramadhan 1444 H - Inisial Release
-- Semua fitur aplikasi SPD sebelumnya
 - Beralih ke CI 4
 - Penggunaan myth/auth untuk modul login
 - Redesain modul laporan 
+- Form SPD sekarang memunculkan opsi Lembar Konfirmasi atau SPD.
+- Penambahan lokasi sekarang bisa langsung pada saat membuat surat tugas.
 
 ## Lisensi
 Aplikasi bebas digunakan dan dikembangkan oleh siapapun, tidak terbatas untuk kepentingan komersial pun di perbolehkan. Tidak ada hak cipta disini. 

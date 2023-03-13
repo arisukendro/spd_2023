@@ -71,8 +71,8 @@ class Spd extends BaseController
                 $isi_tabel .= "
                         <tr>
                             <td class=\"\">".$no_agenda."</td>                           
-                            <td>".$row_st['perihal_st']."<br>
-                                <span class=\"badge badge-danger\">".$row['jenis_formulir']."</span> 
+                            <td class=\"text-default\">".$row_st['perihal_st']."<br>
+                                <span class=\"badge badge-primary\">".$row['jenis_formulir']."</span> 
                                 <span class=\"badge badge-success\">Nomor: ".$row['nomor_spd']."</span> 
                                  <span class=\"badge badge-secondary\">Masa Tugas: ".$row_st['tanggal_berangkat']." s.d. ".$row_st['tanggal_berangkat'].
                                 "</span>
