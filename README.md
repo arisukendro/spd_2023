@@ -28,6 +28,6 @@ PHP versi 7.4 atau lebih tinggi, atau untuk kemudahan bisa menginstall Xampp (ap
 - Redesain modul laporan 
 
 ## Lisensi
-# Aplikasi bebas digunakan dan dikembangkan oleh siapapun, tidak terbatas untuk kepentingan komersial pun di perbolehkan. Tidak ada hak cipta disini. 
+Aplikasi bebas digunakan dan dikembangkan oleh siapapun, tidak terbatas untuk kepentingan komersial pun di perbolehkan. Tidak ada hak cipta disini. 
 Regards,
 Ari Sukendro
