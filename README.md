@@ -21,7 +21,7 @@ PHP versi 7.4 atau lebih tinggi, atau untuk kemudahan bisa menginstall Xampp (ap
 - Sesuaikan beberapa keterangan yang ada di dalam file app/config/app.php
 
 ## Catatan Release
-# 1 Ramadhan 1444 H - Inisial Release
+@ 1 Ramadhan 1444 H - Inisial Release
 - Semua fitur aplikasi SPD sebelumnya
 - Beralih ke CI 4
 - Penggunaan myth/auth untuk modul login
@@ -29,5 +29,5 @@ PHP versi 7.4 atau lebih tinggi, atau untuk kemudahan bisa menginstall Xampp (ap
 
 ## Lisensi
 Aplikasi bebas digunakan dan dikembangkan oleh siapapun, tidak terbatas untuk kepentingan komersial pun di perbolehkan. Tidak ada hak cipta disini. 
-Regards,
+Wassalamualaikum,
 Ari Sukendro
