@@ -6,11 +6,11 @@ use CodeIgniter\Model;
 class UsersModel extends Model 
 {
     protected $table = 'users';
-//     protected $primaryKey = 'id';
+    protected $primaryKey = 'id';
     
     protected $allowedFields = ['username','email','password_hash','active'];
     
-    protected $useSoftDeletes = false ;
+    protected $useSoftDeletes = true ;
     
     // Dates
     protected $useTimestamps = true;
@@ -21,22 +21,36 @@ class UsersModel extends Model
 
    public function selectId($id)
     {
-         return $this->db->table($this->table)
-        ->select('users.id user_id, username, email, active, agu.group_id, ag.id group_id, ag.name group_name, ag.description group_description')
-         ->join('auth_groups_users agu','agu.user_id= '.$this->table.'.id')
-         ->join('auth_groups ag','ag.id = agu.group_id')
-         ->where('users.id', $id)
-         ->get()
-         ->getRowArray();  
+        return $this->db->table($this->table)
+            ->select('users.id user_id, username, email, active, agu.group_id, ag.id group_id, ag.name group_name, ag.description group_description')
+            ->join('auth_groups_users agu','agu.user_id= '.$this->table.'.id')
+            ->join('auth_groups ag','ag.id = agu.group_id')
+            ->where('users.id', $id)
+            ->get()
+            ->getRowArray();  
     }
 
-     public function selectAll()
+    public function selectAll()
     {
-         return $this->db->table($this->table)
-         ->select('users.id id, username, email, active, agu.group_id, ag.id group_id, ag.name group_name, ag.description group_description')
-         ->join('auth_groups_users agu','agu.user_id= '.$this->table.'.id')
-         ->join('auth_groups ag','ag.id = agu.group_id')
-         ->get()
-         ->getResultArray();  
+        return $this->db->table($this->table)
+            ->select('users.id id, username, email, active, agu.group_id, ag.id group_id, ag.name group_name, ag.description group_description')
+            ->join('auth_groups_users agu','agu.user_id= '.$this->table.'.id')
+            ->join('auth_groups ag','ag.id = agu.group_id')
+            ->get()
+            ->getResultArray();
     }
+
+    public function selectGroup(){
+        return $this->db->table('auth_groups ag')
+            ->get()
+            ->getResultArray();
+    }
+
+    public function updateLevel($group_id, $user_id) {
+        return $this->db->table('auth_groups_users')
+            ->set('group_id', $group_id)
+            ->where('user_id', $user_id)
+            ->update();
+    }
+    
 }

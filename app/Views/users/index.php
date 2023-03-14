@@ -77,7 +77,7 @@ function view(id_user) {
 function edit(id_user) {
     $.ajax({
         type: "post",
-        url: "<?=site_url('users/formEdit')?>",
+        url: "<?=site_url('users/edit')?>",
         data: {
             id_user: id_user
         },
@@ -126,7 +126,7 @@ function del(id_user) {
                             showConfirmButton: false,
                         })
                     }
-                    datapegawai();
+                    listData();
                 },
 
                 error: function(xhr, ajaxOptions, thrownError) {

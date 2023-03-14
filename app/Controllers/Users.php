@@ -30,7 +30,7 @@ class Users extends BaseController
             ]; 
             
             $msg = [
-                'data' => view('users/listData', $data)                
+                'data' => view('users/list', $data)                
             ];
             echo json_encode($msg);   
 
@@ -38,7 +38,7 @@ class Users extends BaseController
             exit('Maaf halaman tidak bisa diproses');
         }
     }
-
+    
     public function viewDetil(){
         if($this->request->isAJAX()){            
             $id_user = $this->request->getVar('id_user');
@@ -50,34 +50,88 @@ class Users extends BaseController
                 'email' => $row['email'],
                 'active' => $row['active'],
                 'group_description' => $row['group_description'],
+                'group_name' => $row['group_name'],
             ];
-
+           
             $msg = [
-                'sukses' => view('users/view', $data)                
+                'sukses' => view('users/detail', $data)                
             ];
             
             echo json_encode($msg);   
         }
     }
     
-    public function formEdit(){
+    public function edit(){
         if($this->request->isAJAX()){
-            $id = $this->request->getVar('id');
+            $id = $this->request->getVar('id_user');            
+            $row = $this->mUsers->selectId($id);
             
-            $row = $this->mUser->find($id);
             $data = [
                 'user_id' => $row['user_id'],
                 'email' => $row['email'],
                 'username' => $row['username'],
                 'active' => $row['active'],
+                'group' => $this->mUsers->selectGroup(),
+                'group_name' => $row['group_name'],
             ];
 
             $msg = [
-                'sukses' => view('users/form_edit', $data)                
+                'sukses' => view('users/edit', $data)                
             ];
             
             echo json_encode($msg);   
         }
     }
 
+    public function update(){
+        if($this->request->isAJAX()){
+            $user_id = $this->request->getVar('user_id'); 
+            $group_id = $this->request->getVar('group_level');
+
+            $data = [                        
+                'active' => $this->request->getVar('active'),
+            ];            
+            $this->mUsers->update($user_id, $data);
+          
+            //update group user
+            $this->mUsers->updateLevel($group_id, $user_id);
+            
+            $msg = [
+                'sukses' => 'Data berhasil diupdate',
+            ];
+            
+            echo json_encode($msg);
+        }
+    }
+
+    public function password(){
+        if($this->request->isAJAX()){
+            $data = [                        
+                    'password_hash' => $this->request->getVar('password'),
+            ];
+            $this->mUsers->update($id, $data);
+            
+            $msg = [
+                'sukses' => 'Password telah di update',
+            ];
+            
+            echo json_encode($msg);
+        }
+    }
+
+    public function delete($id_user){
+        if($this->request->isAJAX()){
+            
+            $this->mUsers->delete($id_user);
+
+            $msg = [
+                'sukses' => '[$id_user] Data telah dihapus',
+            ];
+            echo json_encode($msg);
+
+        }else{
+            exit('Maaf halaman tidak bisa diproses');
+        }
+    }
+    
 }

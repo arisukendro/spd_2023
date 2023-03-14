@@ -25,7 +25,7 @@
                         class="fa fa-eye"></i></button>
                 <button type="button" class="btn btn-warning btn-sm" onclick="edit('<?=$row['id']?>')"><i
                         class="fa fa-edit"></i></button>
-                <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?=$row['id']?>')"><i
+                <button type="button" class="btn btn-danger btn-sm" onclick="del('<?=$row['id']?>')"><i
                         class="fa fa-trash"></i></button>
             </td>
         </tr>
@@ -41,7 +41,6 @@ $(document).ready(function() {
         "responsive": true,
         "lengthChange": false,
         "autoWidth": false,
-        "buttons": ["copy", "print"]
     });
 });
 </script>
