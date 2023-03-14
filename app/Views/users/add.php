@@ -2,95 +2,63 @@
 <div class="modal fade" id="modaltambah" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <?=form_open('pegawai/simpandata', ['class'=>'formpegawai'])?>
-            <?=csrf_field();?>
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Pegawai</h5>
+                <h5 class="modal-title">Tambah Data Users</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
 
-            <div class="modal-body">
-                <div class="form-group">
-                    <label>Nama Lengkap*</label>
-                    <input name="nama" id="nama" type="text" class="form-control" placeholder="Nama Lengkap & Gelar">
-                    <div class="invalid-feedback error_nama"> </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Kelompok Pegawai*</label>
-                            <select name="klompeg" id="klompeg" class="form-control select2"
-                                data-minimum-results-for-search="Infinity" style="width: 100%;">
-                                <option value="">-- Pilih --</option>
-                                <?php foreach($data_klompeg as $row): ?>
-                                <option value="<?= $row['id_klompeg']?>"><?= $row['nama_klompeg']?></option>
-                                <?php endforeach ?>
-                            </select>
-                            <div class="invalid-feedback error_klompeg"> </div>
+            <?= view('Myth\Auth\Views\_message_block') ?>
+
+            <form action="<?= url_to('register') ?>" method="post">
+                <div class="modal-body">
+                    <?= csrf_field() ?>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="username"><?=lang('Auth.username')?></label>
+                                <input type="text"
+                                    class="form-control <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>"
+                                    name="username" placeholder="<?=lang('Auth.username')?>"
+                                    value="<?= old('username') ?>">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email"><?=lang('Auth.email')?></label>
+                                <input type="email"
+                                    class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
+                                    name="email" aria-describedby="emailHelp" placeholder="<?=lang('Auth.email')?>"
+                                    value="<?= old('email') ?>">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Pejabat Pemberi Tugas*</label>
-                            <select name="setkom" id="setkom" class="form-control select2"
-                                data-minimum-results-for-search="Infinity" style="width: 100%;">
-                                <option value="">-- Pilih --</option>
-                                <option value="ketua">Ketua</option>
-                                <option value="sekretaris">Sekretaris</option>
-                            </select>
-                            <div class="invalid-feedback error_setkom"> </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="password"><?=lang('Auth.password')?></label>
+                                <input type="password" name="password"
+                                    class="form-control <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>"
+                                    placeholder="<?=lang('Auth.password')?>" autocomplete="off">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Sub Bagian/Divisi <small class="text-muted">Optional</small></label>
-                            <select name="subbag" id="subbag" class="form-control select2">
-                            </select>
-                            <div class="invalid-feedback error_subbag"> </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Jabatan <small class="text-muted">Optional</small></label>
-                            <select name="jabatan" id="jabatan" class="form-control select2 ">
-                            </select>
-                            <div class="invalid-feedback error_jabatan"> </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="pass_confirm"><?=lang('Auth.repeatPassword')?></label>
+                                <input type="password" name="pass_confirm"
+                                    class="form-control <?php if (session('errors.pass_confirm')) : ?>is-invalid<?php endif ?>"
+                                    placeholder="<?=lang('Auth.repeatPassword')?>" autocomplete="off">
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>NIP <small class="text-muted">Optional</small></label>
-                            <input name="nip" id="nip" type="text" class="form-control" placeholder="NIP PNS">
-                            <div class="invalid-feedback error_nip"> </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Pangkat/Golongan <small class="text-muted">Optional</small></label></label>
-                            <select name="pangkat" id="pangkat" class="form-control select2">
-                                <option value="">Tak Ber-NIP</option>
-
-                                <?=option_pangkat(null)?>
-                            </select>
-                            <div class="invalid-feedback error_pangkat"> </div>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary "><?=lang('Auth.register')?></button>
+                    <button type="button" class="btn btn-secondary " data-dismiss="modal">Batal</button>
                 </div>
-
-            </div>
-
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary btnsimpan">Simpan</button>
-                <button type="button" class="btn btn-secondary " data-dismiss="modal">Batal</button>
-            </div>
-            <?=form_close()?>
+                <?=form_close()?>
         </div>
     </div>
 </div>

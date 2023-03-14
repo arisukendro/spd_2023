@@ -39,6 +39,23 @@ class Users extends BaseController
         }
     }
     
+    public function add(){
+        if($this->request->isAJAX()){
+            
+            $data = [
+                
+            ];
+            $msg = [
+                'data' => view('users/add', $data),             
+            ];
+            echo json_encode($msg);   
+
+        }else{
+            exit('Maaf halaman tidak bisa diproses');
+        }
+    }
+
+
     public function viewDetil(){
         if($this->request->isAJAX()){            
             $id_user = $this->request->getVar('id_user');

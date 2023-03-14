@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade " id="modal-edit" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <?=form_open('users/update', ['class'=>'form'])?>
             <?=csrf_field();?>
@@ -13,47 +13,30 @@
             </div>
 
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input name="username" id="username" type="text" class="form-control" value="<?=$username?>"
-                                readonly>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input name="username" id="username" type="text" class="form-control" value="<?=$username?>"
+                        readonly>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Level User</label>
-                            <select name="group_level" id="group_name" class="form-control">
-                                <?php foreach($group as $r_group): ?>
-                                <option value=<?=$r_group['id']?>
-                                    <?= $r_group['name'] == $group_name ? 'selected' : '' ?>>
-                                    <?=$r_group['description'] ?>
-                                </option>
-                                <?php endforeach ?>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-
-                    </div>
+                <div class="form-group">
+                    <label>Level User</label>
+                    <select name="group_level" id="group_name" class="form-control">
+                        <?php foreach($group as $r_group): ?>
+                        <option value=<?=$r_group['id']?> <?= $r_group['name'] == $group_name ? 'selected' : '' ?>>
+                            <?=$r_group['description'] ?>
+                        </option>
+                        <?php endforeach ?>
+                    </select>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Status</label>
-                            <select name="active" id="aktif" class="form-control select">
-                                <option value="1" <?= $active == 1 ? 'selected' : '' ?>>Aktif</option>
-                                <option value="0" <?= $active == 0 ? 'selected' : '' ?>>Non Aktif</option>
-                            </select>
-                            <div class="invalid-feedback error_aktif"> </div>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <select name="active" id="aktif" class="form-control select">
+                        <option value="1" <?= $active == 1 ? 'selected' : '' ?>>Aktif</option>
+                        <option value="0" <?= $active == 0 ? 'selected' : '' ?>>Non Aktif</option>
+                    </select>
+                    <div class="invalid-feedback error_aktif"> </div>
                 </div>
             </div>
 

@@ -141,7 +141,7 @@ function del(id_user) {
 $('.btnTambah').click(function(e) {
     e.preventDefault();
     $.ajax({
-        url: "<?=site_url('users/create')?>",
+        url: "<?=site_url('users/add')?>",
         dataType: "json",
         success: function(response) {
             $('.viewmodal').html(response.data).show();
