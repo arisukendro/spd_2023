@@ -11,26 +11,22 @@
 
             <?= view('Myth\Auth\Views\_message_block') ?>
 
-            <form action="<?= url_to('register') ?>" method="post">
+            <form action="<?=site_url('users/store') ?>" method="post" class="form">
                 <div class="modal-body">
                     <?= csrf_field() ?>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="username"><?=lang('Auth.username')?></label>
-                                <input type="text"
-                                    class="form-control <?php if (session('errors.username')) : ?>is-invalid<?php endif ?>"
-                                    name="username" placeholder="<?=lang('Auth.username')?>"
-                                    value="<?= old('username') ?>">
+                                <input type="text" class="username form-control " name="username">
+                                <div class="invalid-feedback error_username"> </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="email"><?=lang('Auth.email')?></label>
-                                <input type="email"
-                                    class="form-control <?php if (session('errors.email')) : ?>is-invalid<?php endif ?>"
-                                    name="email" aria-describedby="emailHelp" placeholder="<?=lang('Auth.email')?>"
-                                    value="<?= old('email') ?>">
+                                <input type="email" class="email form-control" name="email">
+                                <div class="invalid-feedback error_email"> </div>
                             </div>
                         </div>
                     </div>
@@ -38,19 +34,36 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="password"><?=lang('Auth.password')?></label>
-                                <input type="password" name="password"
-                                    class="form-control <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>"
-                                    placeholder="<?=lang('Auth.password')?>" autocomplete="off">
+                                <input type="password" name="password" class="password form-control" autocomplete="off">
+                                <div class="invalid-feedback error_password"> </div>
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="pass_confirm"><?=lang('Auth.repeatPassword')?></label>
-                                <input type="password" name="pass_confirm"
-                                    class="form-control <?php if (session('errors.pass_confirm')) : ?>is-invalid<?php endif ?>"
-                                    placeholder="<?=lang('Auth.repeatPassword')?>" autocomplete="off">
+                                <input type="password" name="pass_confirm" class="pass_confirm form-control"
+                                    autocomplete="off">
+                                <div class="invalid-feedback error_pass_confirm"> </div>
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Level User</label>
+                                <select name="group_level" id="group_name" class="form-control">
+                                    <?php foreach($group as $r_group): ?>
+                                    <option value=<?=$r_group['id']?>>
+                                        <?=$r_group['description'] ?>
+                                    </option>
+                                    <?php endforeach ?>
+                                </select>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -64,44 +77,7 @@
 </div>
 
 <script>
-function dataKlompeg() {
-    $('#klompeg').change(function(e) {
-        if ($('#klompeg').val().length === 0) {
-            $('#subbag').html('');
-            $('#jabatan').html('');
-        } else {
-            $.ajax({
-                type: "post",
-                url: "<?= site_url('chaindata/ambilDataKlompeg')?>",
-                data: {
-                    klompeg: $(this).val()
-                },
-                dataType: "json",
-                success: function(response) {
-                    if (response.dataSubbag) {
-                        $('#subbag').html(response.dataSubbag);
-                        $('#subbag').select();
-                    }
-
-                    if (response.dataJabatan) {
-                        $('#jabatan').html(response.dataJabatan);
-                        $('#jabatan').select();
-                    }
-                },
-                error: function(xhr, thrownError) {
-                    alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
-                },
-            });
-        }
-
-    });
-
-}
-
-
-
-
-$('.formpegawai').submit(function(e) {
+$('.form').submit(function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -122,44 +98,36 @@ $('.formpegawai').submit(function(e) {
 
         success: function(response) {
             if (response.error) {
-                if (response.error.nama) {
-                    $('#nama').addClass('is-invalid');
-                    $('.error_nama').html(response.error.nama)
+                if (response.error.username) {
+                    $('.username').addClass('is-invalid');
+                    $('.error_username').html(response.error.username)
                 } else {
-                    $('#nama').removeClass('is-invalid');
-                    $('.error_nama').html()
+                    $('.username').removeClass('is-invalid');
+                    $('.error_username').html()
                 }
 
-                if (response.error.klompeg) {
-                    $('#klompeg').addClass('is-invalid');
-                    $('.error_klompeg').html(response.error.klompeg)
+                if (response.error.email) {
+                    $('.email').addClass('is-invalid');
+                    $('.error_email').html(response.error.email)
                 } else {
-                    $('#klompeg').removeClass('is-invalid');
-                    $('.error_klompeg').html()
+                    $('.email').removeClass('is-invalid');
+                    $('.error_email').html()
                 }
 
-                if (response.error.setkom) {
-                    $('#setkom').addClass('is-invalid');
-                    $('.error_setkom').html(response.error.setkom)
+                if (response.error.password) {
+                    $('.password').addClass('is-invalid');
+                    $('.error_password').html(response.error.password)
                 } else {
-                    $('#setkom').removeClass('is-invalid');
-                    $('.error_setkom').html()
+                    $('.password').removeClass('is-invalid');
+                    $('.error_password').html()
                 }
 
-                if (response.error.subbag) {
-                    $('#subbag').addClass('is-invalid');
-                    $('.error_subbag').html(response.error.subbag)
+                if (response.error.pass_confirm) {
+                    $('.pass_confirm').addClass('is-invalid');
+                    $('.error_pass_confirm').html(response.error.pass_confirm)
                 } else {
-                    $('#subbag').removeClass('is-invalid');
-                    $('.error_subbag').html()
-                }
-
-                if (response.error.jabatan) {
-                    $('#jabatan').addClass('is-invalid');
-                    $('.error_jabatan').html(response.error.jabatan)
-                } else {
-                    $('#jabatan').removeClass('is-invalid');
-                    $('.error_jabatan').html()
+                    $('.pass_confirm').removeClass('is-invalid');
+                    $('.error_pass_confirm').html()
                 }
 
             } else {
@@ -186,7 +154,6 @@ $('.formpegawai').submit(function(e) {
 })
 
 $(document).ready(function() {
-    dataKlompeg();
     $('.select2').select2()
 });
 </script>

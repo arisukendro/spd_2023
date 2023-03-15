@@ -42,6 +42,7 @@ class UsersModel extends Model
 
     public function selectGroup(){
         return $this->db->table('auth_groups ag')
+            ->where ('name !=', 'super')
             ->get()
             ->getResultArray();
     }

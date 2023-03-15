@@ -43,7 +43,7 @@ class Users extends BaseController
         if($this->request->isAJAX()){
             
             $data = [
-                
+                    'group' => $this->mUsers->selectGroup(),
             ];
             $msg = [
                 'data' => view('users/add', $data),             
@@ -55,7 +55,59 @@ class Users extends BaseController
         }
     }
 
+    public function store(){
+        if($this->request->isAJAX()){
+           
+            
+            $validation = \Config\Services::validation();
 
+            $valid = $this->validate([
+                'username' => 'required|is_unique[users.username]',
+                'email' => 'required|is_unique[users.email]',
+                'password' => 'required',
+                'pass_confirm' => 'required|matches[password]',
+            ]);
+            
+            if(!$valid){
+                $msg =[
+                    'error' => [
+                        'username' => $validation->getError('username'),
+                        'email' => $validation->getError('email'),
+                        'password' => $validation->getError('password'),
+                        'pass_confirm' => $validation->getError('pass_confirm'),
+                    ]
+                ];
+                
+            }else{
+                $simpandata = [
+                        'username' => $this->request->getVar('username'),
+                        'email' => $this->request->getVar('email'),
+                        'password_hash' => Password::hash($this->request->getVar('password')),
+                        'active' => 1,
+                    ];
+                
+                $this->mUser->insert($simpandata);
+
+                //add on group
+                $lastUser = $this->mUser->orderBy('id', 'DESC')->limit(1)->first();
+                
+                $this->db->table('auth_groups_users')->insert([
+                    'group_id' => $this->request->getVar('group_level'),
+                    'user_id' => $lastUser['id'],
+                ]);
+
+                $msg = [
+                    'sukses' => 'Data berhasil disimpan',
+                ];
+            }
+            echo json_encode($msg);
+
+        }else{
+            exit('Maaf halaman tidak bisa diproses');
+        }
+    }
+
+    
     public function viewDetil(){
         if($this->request->isAJAX()){            
             $id_user = $this->request->getVar('id_user');
